@@ -64,7 +64,7 @@ public class PokemonTest {
         Trainer t2 = new Trainer("TheIllusive", "Man");
 
         //Test getter and setter
-        System.out.println("Testen Getter Trainer");££
+        System.out.println("Testen Getter Trainer");
         System.out.println("t1:");
         System.out.println(t1.getFirstName()+ " "+ t1.getLastName());
         System.out.println("t2:");
