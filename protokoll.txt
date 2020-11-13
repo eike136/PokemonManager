@@ -1,0 +1,8 @@
+Pairprogramming Protokoll 
+
+Eike:
+erstellt Klasse Trainer, Konstruktor, Getter und Setter, 
+erstellt Liste von Pokemon, neues Attribut in Pokemon Klasse (Trainer des Pokemon)
+
+Luisa: 
+Funktionen für Hinzufügen eines Pokemon zu einem Trainer, Funktionen für Abfragen (einzeln, alle Pokemons eines Trainers, alle Pokemons eines Trainers eines bestimmten Typs, Tests für alle Funktionen des Trainers
