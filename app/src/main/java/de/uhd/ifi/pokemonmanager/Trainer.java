@@ -29,13 +29,42 @@ public class Trainer{
 
     @Override
     public String toString() {
-        return "Trainer{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
+        return firstName + ' ' + lastName;}
+
+    public void addPokemon(Pokemon newPokemon){
+        if (newPokemon.getTrainer() == "frei"){
+            newPokemon.setTrainer(this.toString());
+        } else {
+            System.out.println("Pokemon not free");
+        }
     }
 
-    ArrayList<pokemon> pokemons = pokemon_list;
+    public void printSinglePokemon (Pokemon pokemon) {
+        for (int i = 0; i < pokemons.size(); i++) {
+            if (this.toString() == pokemon.getTrainer() ){
+                System.out.println(pokemon.getName());
+            } else {
+                System.out.println("This Pokemon doesn't belong to this trainier");
+            }
+        }
+    }
+
+    public void printAllPokemon(){
+        for (int i = 0; i < pokemons.size(); i++) {
+            if (this.toString() == pokemons.get(i).getTrainer() ){
+                System.out.println(pokemons.get(i).getName());
+            }
+        }
+    }
+
+    public void printAllPokemon(Type type){
+        for (int i = 0; i < pokemons.size(); i++) {
+            if ((this.toString() == pokemons.get(i).getTrainer()) && (pokemons.get(i).getType() == type)){
+                System.out.println(pokemons.get(i).getName());
+            }
+        }
+    }
+    ArrayList<Pokemon> pokemons = Pokemon.pokemon_list;
 
     public static void main(String[] args){
 

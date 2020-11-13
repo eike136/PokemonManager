@@ -16,6 +16,7 @@ public class Pokemon {
         this.type = type;
         this.number = nextNumber;
         nextNumber++;
+        pokemon_list.add(this);
     }
 
     public String getName() {
