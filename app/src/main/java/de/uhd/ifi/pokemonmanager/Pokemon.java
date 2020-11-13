@@ -1,11 +1,15 @@
 package de.uhd.ifi.pokemonmanager;
 
+import java.util.ArrayList;
+
 public class Pokemon {
 
     private String name;
     private Type type;
     private int number;
     private static int nextNumber;
+    private String Trainer = "frei";
+    public static ArrayList<Pokemon> pokemon_list = new ArrayList<Pokemon>();
 
     public Pokemon(String name, Type type) {
         this.name = name;
@@ -43,5 +47,15 @@ public class Pokemon {
         Pokemon p;
         p = new Pokemon("Glurak", Type.FIRE);
         System.out.println(p);
+
+
+    }
+
+    public String getTrainer() {
+        return Trainer;
+    }
+
+    public void setTrainer(String trainer) {
+        Trainer = trainer;
     }
 }
