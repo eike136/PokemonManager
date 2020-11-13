@@ -59,4 +59,8 @@ public class Pokemon {
     public void setTrainer(String trainer) {
         Trainer = trainer;
     }
+
+    public static ArrayList<Pokemon> getPokemon_list() {
+        return pokemon_list;
+    }
 }

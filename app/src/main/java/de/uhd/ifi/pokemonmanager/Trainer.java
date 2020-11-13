@@ -27,6 +27,7 @@ public class Trainer{
         this.lastName = lastName;
     }
 
+
     @Override
     public String toString() {
         return firstName + ' ' + lastName;}
@@ -40,26 +41,29 @@ public class Trainer{
     }
 
     public void printSinglePokemon (Pokemon pokemon) {
-        for (int i = 0; i < pokemons.size(); i++) {
-            if (this.toString() == pokemon.getTrainer() ){
-                System.out.println(pokemon.getName());
-            } else {
-                System.out.println("This Pokemon doesn't belong to this trainier");
-            }
+        if (this.toString().equals(pokemon.getTrainer()) ){
+            System.out.println(pokemon.getName());
+        } else {
+            System.out.println("This Pokemon doesn't belong to " + this.toString() + ". It is an asset of " + pokemon.getTrainer()+ ".");
         }
     }
 
+
+
     public void printAllPokemon(){
+        System.out.println("All Pokemon of " + this.toString() + ":");
         for (int i = 0; i < pokemons.size(); i++) {
-            if (this.toString() == pokemons.get(i).getTrainer() ){
+            if (this.toString().equals(pokemons.get(i).getTrainer()) ){
                 System.out.println(pokemons.get(i).getName());
             }
         }
     }
 
+
     public void printAllPokemon(Type type){
+        System.out.println("All Pokemon of " + this.toString() +" of type "+ type + ":");
         for (int i = 0; i < pokemons.size(); i++) {
-            if ((this.toString() == pokemons.get(i).getTrainer()) && (pokemons.get(i).getType() == type)){
+            if (this.toString().equals(pokemons.get(i).getTrainer()) && pokemons.get(i).getType().equals(type)){
                 System.out.println(pokemons.get(i).getName());
             }
         }
@@ -67,8 +71,9 @@ public class Trainer{
     ArrayList<Pokemon> pokemons = Pokemon.pokemon_list;
 
     public static void main(String[] args){
-
-
+        Trainer t;
+        t = new Trainer ("vorname", "nachname");
+        System.out.println(t);
 
     }
 }
