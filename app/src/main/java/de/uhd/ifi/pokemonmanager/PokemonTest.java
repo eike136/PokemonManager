@@ -1,5 +1,7 @@
 package de.uhd.ifi.pokemonmanager;
 
+import java.sql.SQLOutput;
+
 public class PokemonTest {
     public static void main(String[] args) {
         // https://de.wikipedia.org/wiki/Liste_der_Pok%C3%A9mon
@@ -118,7 +120,53 @@ public class PokemonTest {
         //Test Abfrage alle Pokemon von Trainer, bestimmter Typ
         t1.printAllPokemon(Type.FIRE);
         t2.printAllPokemon(Type.POISON);
+        System.out.println();
 
+
+        //Aufgabe 2.2
+        //Test swap zweier freigegebener Pokemon
+        System.out.println("Testen zwei Pokemon freigeben und tauschen (p5 und p7)");
+        //Pokemon freigegen
+        p5.setSwapAllowed(true);
+        p7.setSwapAllowed(true);
+        //swap Pokemon
+        Swap s1 = new Swap(t1, p7, t2, p5);
+        s1.execute();
+        t1.printAllPokemon();
+        t2.printAllPokemon();
+        System.out.println();
+
+        //Test swap zweier Pokemon desselben Trainers
+        System.out.println("Testen zwei Pokemon desselben Trainers zu Tauschen");
+        Swap s2 = new Swap(t2, p4, t2, p3);
+        s2.execute();
+        t1.printAllPokemon();
+        t2.printAllPokemon();
+        System.out.println();
+
+        //Testen swappen Pokemon die Trainer nicht gehören
+        System.out.println("Testen Pokemon zu Tauschen, die Trainer nicht gehören");
+        Swap s3 = new Swap(t2, p8, t1, p6);
+        s3.execute();
+        t1.printAllPokemon();
+        t2.printAllPokemon();
+        System.out.println();
+
+        //Testen von Datum und ID
+        System.out.println("Testen von date und ID");
+        System.out.println("Zeitpunkt swap s1: " + s1.getDate());
+        System.out.println("ID swap s1: " + s1.getID());
+        System.out.println();
+
+        //Testen swaps Liste
+
+        System.out.println("Testen swaps Liste eines Pokemon, das NICHT an Tausch beteiligt war (p1)");
+        p1.printSwapsList();
+        System.out.println();
+
+        System.out.println("Testen swaps Liste eines Pokemon, das an Tausch beteiligt war (p7)");
+        p7.printSwapsList();
+        System.out.println();
 
     }
 }
