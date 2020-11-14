@@ -1,6 +1,5 @@
 package de.uhd.ifi.pokemonmanager;
 
-import java.sql.SQLOutput;
 
 public class PokemonTest {
     public static void main(String[] args) {
@@ -102,7 +101,6 @@ public class PokemonTest {
         System.out.println();
 
 
- //       System.out.println(p1.getPokemon_list());
 
         System.out.println("Abfrage einzelner Pokemon");
         System.out.println("Abfrage p7 bei t1:");

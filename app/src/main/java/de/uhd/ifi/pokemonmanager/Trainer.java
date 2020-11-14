@@ -33,7 +33,7 @@ public class Trainer{
         return firstName + ' ' + lastName;}
 
     public void addPokemon(Pokemon newPokemon){
-        if (newPokemon.getTrainer() == "frei"){
+        if (newPokemon.getTrainer().equals("frei") ){
             newPokemon.setTrainer(this.toString());
         } else {
             System.out.println("Pokemon not free");
@@ -68,7 +68,7 @@ public class Trainer{
             }
         }
     }
-    ArrayList<Pokemon> pokemons = Pokemon.pokemon_list;
+    static ArrayList<Pokemon> pokemons = Pokemon.getPokemonList();
 
     public static void main(String[] args){
         Trainer t;

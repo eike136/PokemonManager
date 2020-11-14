@@ -1,7 +1,6 @@
 package de.uhd.ifi.pokemonmanager;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Pokemon {
 
@@ -9,19 +8,23 @@ public class Pokemon {
     private Type type;
     private int number;
     private static int nextNumber;
-    private String Trainer = "frei";
+    private String trainer = "frei";
 
     private java.util.List<Swap> swaps;
     private boolean isSwapAllowed = false;
 
-    public static ArrayList<Pokemon> pokemon_list = new ArrayList<Pokemon>();
+    private static ArrayList<Pokemon> pokemonList = new ArrayList<>();
+
+    public static ArrayList<Pokemon> getPokemonList() {
+        return pokemonList;
+    }
 
     public Pokemon(String name, Type type) {
         this.name = name;
         this.type = type;
         this.number = nextNumber;
         nextNumber++;
-        pokemon_list.add(this);
+        pokemonList.add(this);
         swaps = new ArrayList<>();
     }
 
@@ -57,15 +60,11 @@ public class Pokemon {
     }
 
     public String getTrainer() {
-        return Trainer;
+        return trainer;
     }
 
     public void setTrainer(String trainer) {
-        Trainer = trainer;
-    }
-
-    public static ArrayList<Pokemon> getPokemon_list() {
-        return pokemon_list;
+        this.trainer = trainer;
     }
 
 
@@ -84,7 +83,7 @@ public class Pokemon {
     public void printSwapsList() {
         for (int i = 0; i< swaps.size(); i++) {
             System.out.println(swaps.get(i).getID());
-        };
+        }
     }
 }
 
