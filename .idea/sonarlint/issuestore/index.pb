@@ -6,11 +6,11 @@
 
 Oapp/src/androidTest/java/de/uhd/ifi/pokemonmanager/ExampleInstrumentedTest.java,9\1\919064f5779e815d00b23f1cc2a8449d5e16854d
 l
-<app/src/main/java/de/uhd/ifi/pokemonmanager/PokemonTest.java,8\7\878fda7bd1e86d8a27ad2ff827e3938785e8e601
+<app/src/main/java/de/uhd/ifi/pokemonmanager/PokemonTest.java,8/7/878fda7bd1e86d8a27ad2ff827e3938785e8e601
 p
 @app/src/test/java/de/uhd/ifi/pokemonmanager/ExampleUnitTest.java,4\8\48aaff46aa481a3f6c52dd6b7732fe17400aa1ed
 h
-8app/src/main/java/de/uhd/ifi/pokemonmanager/Trainer.java,9\a\9a79f448d2af255432faf174d0bd37235161431e
+8app/src/main/java/de/uhd/ifi/pokemonmanager/Trainer.java,9/a/9a79f448d2af255432faf174d0bd37235161431e
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 F
@@ -24,4 +24,8 @@ A
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 h
-8app/src/main/java/de/uhd/ifi/pokemonmanager/Pokemon.java,3\3\33ebdf2bb24d9a9af2c21b97a226acf02f783053
+8app/src/main/java/de/uhd/ifi/pokemonmanager/Pokemon.java,3/3/33ebdf2bb24d9a9af2c21b97a226acf02f783053
+e
+5app/src/main/java/de/uhd/ifi/pokemonmanager/Type.java,2/6/263d49c79c3380be327db42f202f4e583190094e
+e
+5app/src/main/java/de/uhd/ifi/pokemonmanager/Swap.java,d/1/d1d6607df2a5a6ea2d9aa079c2fd0559d5eb1950

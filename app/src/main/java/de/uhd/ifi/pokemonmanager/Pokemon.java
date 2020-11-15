@@ -1,6 +1,7 @@
 package de.uhd.ifi.pokemonmanager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Pokemon {
 
@@ -10,6 +11,8 @@ public class Pokemon {
     private static int nextNumber;
     private String Trainer = "frei";
     public static ArrayList<Pokemon> pokemon_list = new ArrayList<Pokemon>();
+    private List<Swap> swaps;
+    private boolean isSwapAllowed = true;
 
     public Pokemon(String name, Type type) {
         this.name = name;
@@ -62,5 +65,13 @@ public class Pokemon {
 
     public static ArrayList<Pokemon> getPokemon_list() {
         return pokemon_list;
+    }
+
+    public boolean isSwapAllowed() {
+        return isSwapAllowed;
+    }
+
+    public void setSwapAllowed(boolean swapAllowed) {
+        isSwapAllowed = swapAllowed;
     }
 }

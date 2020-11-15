@@ -119,6 +119,15 @@ public class PokemonTest {
         t1.printAllPokemon(Type.FIRE);
         t2.printAllPokemon(Type.POISON);
 
-
+        // Test swapping
+        System.out.println();
+        System.out.println("Test swapping:");
+        Swap swap1 = new Swap(p3,p4);
+        swap1.execute();
+        Swap swap2 = new Swap(p4, p7);
+        swap2.execute();
+        p5.setSwapAllowed(false);
+        Swap swap3 = new Swap(p1, p5);
+        swap3.execute();
     }
 }

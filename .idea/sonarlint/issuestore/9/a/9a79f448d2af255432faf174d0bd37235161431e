@@ -1,0 +1,11 @@
+
+[
+java:S4973$"9Use the "equals" method if value comparison was intended.(“μΌχϋÿÿÿÿ8™Όβά.
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(κΖ€ωÿÿÿÿ8™Όβά.
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(”ΉΪΙ8™Όβά.
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(ΞΔ“8™Όβά.
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(¶λ•ωύÿÿÿÿ8™Όβά.
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(Η½“Φ8™Όβά.
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(ΨΒΦ8™Όβά.
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(Η½“Φ8™Όβά.
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(¤Έ¤ϋÿÿÿÿ8™Όβά.
